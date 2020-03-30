@@ -7,11 +7,11 @@ function preload() {
 }
  
 function setup() {
-  createCanvas(800, 600);
-  textFont('prompt', 16);
-  textAlign(LEFT);
+  createCanvas(windowWidth, windowHeight);
+  textFont('Open Sans', 16);
+  textAlign(CENTER);
 
-  lines = ["click to (re)generate!"];
+  lines = ["clique para gerar o texto curatorial!"];
 
   // create a markov model w' n=4
   markov = new RiMarkov(4);
@@ -25,8 +25,8 @@ function setup() {
 
 
 function drawText() {
-  background(250);
-  text(lines.join(' '), x, y, 400, 400);
+  background(170,88,198);
+  text(lines.join(' '), width/4, height/4, width/2, 400);
   lero = lines.join('');
 }
 
