@@ -8,7 +8,7 @@ function preload() {
  
 function setup() {
   createCanvas(windowWidth, windowHeight);
-  textFont('Open Sans', 16);
+  textFont('Open Sans', 18);
   textAlign(CENTER);
 
   lines = ["clique para gerar o texto curatorial!"];
@@ -26,6 +26,7 @@ function setup() {
 
 function drawText() {
   background(170,88,198);
+  fill(237,237,238);
   text(lines.join(' '), width/4, height/4, width/2, 400);
   lero = lines.join('');
 }
